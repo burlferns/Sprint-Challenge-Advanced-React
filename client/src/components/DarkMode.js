@@ -18,7 +18,7 @@ export default function DarkMode({data}) {
       <Button textDisplay="Toggle card dark mode" runFunc={tgglDMode} />
       <p className="statusDM">{`Dark Mode:${darkMode?"ON":"OFF"}`}</p>
     </div>
-    
+        
     <div className="divOfCards">
       {data.map( elm => 
         <PlayerCard key={elm.id} playerData={elm}/>

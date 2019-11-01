@@ -20,7 +20,7 @@ class PlayersList extends React.Component {
     axios
       .get("http://localhost:5000/api/players")
       .then(res => {
-        console.log("This is data from the server",res.data);
+        // console.log("This is data from the server",res.data);
         this.setState({
           srvData : res.data,
         });
