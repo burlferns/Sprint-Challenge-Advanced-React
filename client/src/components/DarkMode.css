@@ -1,0 +1,22 @@
+.divOfCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tglBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color:white;
+}
+
+.statusDM {
+    width:fit-content;
+    margin:10px auto; 
+}

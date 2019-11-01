@@ -9,7 +9,7 @@ const StylDiv = styled.div`
 
 
 
-export default function PlayersCard({playerData}) {
+export default function PlayerCard({playerData}) {
 
   const {name, country} = playerData;
 
@@ -17,7 +17,6 @@ export default function PlayersCard({playerData}) {
     <StylDiv>
       <p>{`Name: ${name}`}</p>
       <p>{`Country: ${country}`}</p>
-
     </StylDiv>
 
   )

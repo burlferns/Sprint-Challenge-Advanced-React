@@ -2,18 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import styled from "styled-components";
 
-import PlayersCard from './PlayersCard';
+import DarkMode from './DarkMode';
 
 const StylH1 = styled.h1`
   text-align:center;
 `;
 
 
-const StylDiv = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-`;
+
 
 class PlayersList extends React.Component {
   state = {
@@ -37,14 +33,11 @@ class PlayersList extends React.Component {
     return ( <>
       <StylH1>Women's World Cup Players</StylH1>
 
-      <StylDiv>
-        {this.state.srvData.length===0 
-          ? <p>Loading data ...</p>
-          : this.state.srvData.map( elm => 
-            <PlayersCard key={elm.id} playerData={elm}/>
-          )
-        }
-      </StylDiv>
+      {this.state.srvData.length===0 
+        ? <p>Loading data ...</p>
+        : <DarkMode data={this.state.srvData}/>
+      }
+      
       
 
     </> );
